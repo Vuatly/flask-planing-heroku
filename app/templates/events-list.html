@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for event in events %}
+<a style="text-decoration: none" href="{{ url_for('event_detail', event_id=event.id) }}">
+    <div class="event">
+        <h3>{{ event.title }}</h3>
+        <h5> {{ event.author }}</h5>
+        <p>{{ event.desc }}</p>
+        <p>{{ event.time_start }}</p>
+        <p>{{ event.time_end }}</p>
+    </div>
+</a>
+
+    {% endfor %}
+{% endblock content %}

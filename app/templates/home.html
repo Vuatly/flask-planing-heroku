@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<blockquote class="blockquote">
+  <p class="mb-0">Links</p>
+    <footer class="blockquote-footer"><a href="{{ url_for('create_user') }}">Register</a></footer>
+   {% if current_user.is_authenticated %}
+    <footer class="blockquote-footer"><a href="{{ url_for('events_list') }}">Events List</a></footer>
+    <footer class="blockquote-footer"><a href="{{ url_for('add_event') }}">Add event</a></footer>
+   {% endif %}
+</blockquote>
+{% endblock content %}

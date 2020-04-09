@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if message %}
+<h3>{{ message }}</h3>
+{% endif %}
+<form method="POST" action="/add-event">
+        {{ form.csrf_token }}
+        {{ form.title }}
+        {{ form.desc }}
+        {{ form.time_start }}
+        {{ form.time_end }}
+    <input type="submit" value="send">
+</form>
+{% endblock content %}
