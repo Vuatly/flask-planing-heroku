@@ -1,6 +1,6 @@
-# Код сервиса, который запущен на herok по адресу: https://planing-service.herokuapp.com/
+# Код сервиса, который запущен на heroku по адресу: https://planing-service.herokuapp.com/
 
-# Эндпоинты:
+## Эндпоинты:
   * https://planing-service.herokuapp.com/ -- домашняя страница
   * https://planing-service.herokuapp.com/events-list -- Список событий
   * https://planing-service.herokuapp.com/event-detail/<int:event_id> -- Страница с конкретным событием
